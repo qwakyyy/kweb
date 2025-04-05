@@ -1,7 +1,7 @@
 const fs = require('fs');
 const util = require('util');
 const readFile = util.promisify(fs.readFile);
-const printFileSize = asyncfilename => {
+const printFileSize = async filename => {
     try {
         constdata= await readFile(filename);
         console.log(`Datalength: ${data.length} bytes`);
